@@ -27,6 +27,17 @@
   <meta name="twitter:title" content="OpenClaw Model Cost Calculator" />
   <meta name="twitter:description" content="Compare model pricing across providers. Estimate monthly token costs." />
   <meta name="twitter:image" content="preview.png" />
+
+  <meta property="og:title" content="OpenClaw Model Cost Calculator" />
+  <meta property="og:description" content="Compare model pricing across providers. Estimate token costs before you scale." />
+  <meta property="og:image" content="https://your-vercel-domain.vercel.app/og-image.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-vercel-domain.vercel.app" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OpenClaw Model Cost Calculator" />
+  <meta name="twitter:description" content="Compare model pricing across providers. Estimate token costs before you scale." />
+  <meta name="twitter:image" content="https://openclaw-cost-calculator.vercel.app/og-image.png" />
 </head>
 <body>
 
@@ -78,7 +89,7 @@
 
           <div class="mode-row">
             <div class="mode-toggle">
-              <input id="compareMode" type="checkbox" />
+              <input id="compareMode" type="checkbox" class="cb" />
               <label for="compareMode">Compare two models</label>
             </div>
           </div>
@@ -133,7 +144,7 @@
 
           <div class="aisa-row">
             <div class="aisa-toggle">
-              <input id="showAisa" type="checkbox" checked />
+              <input id="showAisa" type="checkbox" class="cb" checked />
               <label for="showAisa">Show AIsa estimate (illustrative)</label>
             </div>
 
@@ -146,7 +157,7 @@
 
           <div class="mode-row">
             <div class="mode-toggle">
-              <input id="annualMode" type="checkbox" />
+              <input id="annualMode" type="checkbox" class="cb" />
               <label for="annualMode">Show annual projection</label>
             </div>
           </div>
