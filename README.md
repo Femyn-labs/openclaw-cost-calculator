@@ -104,7 +104,7 @@ openclaw-pricing-calculator/
 
 Clone the repo:
 
-git clone https://github.com/YOUR_USERNAME/openclaw-cost-calculator.git
+git clone https://github.com/Femyn-labs/openclaw-cost-calculator.git
 
 Open index.html in your browser.
 
