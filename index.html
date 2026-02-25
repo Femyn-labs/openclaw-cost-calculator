@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenClaw Model Cost Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="theme-color" content="#ff7a1a" />
+
+  <meta property="og:title" content="OpenClaw Model Cost Calculator" />
+  <meta property="og:description" content="Compare model pricing across providers. Estimate monthly token costs. Built with AIsa infrastructure." />
+  <meta property="og:image" content="https://yourdomain.com/preview.png" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OpenClaw Model Cost Calculator" />
+  <meta name="twitter:description" content="Compare model pricing across providers. Estimate monthly token costs." />
+  <meta name="twitter:image" content="https://yourdomain.com/preview.png" />
+
+  <meta property="og:title" content="OpenClaw Model Cost Calculator" />
+  <meta property="og:description" content="Compare model pricing across providers. Estimate monthly token costs. Built with AIsa infrastructure." />
+  <meta property="og:image" content="preview.png" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OpenClaw Model Cost Calculator" />
+  <meta name="twitter:description" content="Compare model pricing across providers. Estimate monthly token costs." />
+  <meta name="twitter:image" content="preview.png" />
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="hero">
+
+      <div class="hero-pill">
+        <span class="dot"></span>
+        Built with AIsa Infrastructure
+      </div>
+
+      <h1 class="hero-title">
+        OpenClaw Model<br />
+        Cost Calculator
+      </h1>
+
+      <p class="hero-subtitle">
+        Compare model pricing across providers. Estimate real monthly token costs.
+        Make informed routing decisions before you scale.
+      </p>
+
+      <div class="cred-row">
+        <div class="cred-item">
+          <span class="cred-dot"></span>
+          Trusted pricing data, sourced from official provider list pricing.
+        </div>
+
+        <div class="cred-item">
+          <span class="cred-dot"></span>
+          Built for OpenClaw builders, includes AIsa estimate as an illustrative comparison.
+        </div>
+      </div>
+
+    </header>
+
+    <section class="calculator-card">
+      <div class="layout">
+
+        <!-- LEFT: Inputs -->
+        <div class="left">
+
+          <div class="section-title">Model discovery</div>
+
+          <div class="field">
+            <label for="modelSearch">Search model</label>
+            <input id="modelSearch" type="text" placeholder="Type: qwen, claude, gemini, gpt, kimi..." />
+          </div>
+
+          <div class="mode-row">
+            <div class="mode-toggle">
+              <input id="compareMode" type="checkbox" />
+              <label for="compareMode">Compare two models</label>
+            </div>
+          </div>
+
+          <div class="section-title">Model selection</div>
+
+          <!-- Single mode -->
+          <div class="field" id="singleSelectBlock">
+            <label for="modelSelect">Select Provider & Model</label>
+            <select id="modelSelect">
+              <option value="" selected disabled>Select a model...</option>
+            </select>
+          </div>
+
+          <!-- Compare mode -->
+          <div class="compare-grid" id="compareSelectBlock" style="display:none;">
+            <div class="field">
+              <label for="modelSelectA">Model A</label>
+              <select id="modelSelectA">
+                <option value="" selected disabled>Select Model A...</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="modelSelectB">Model B</label>
+              <select id="modelSelectB">
+                <option value="" selected disabled>Select Model B...</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="section-title">Usage inputs</div>
+
+          <div class="token-grid">
+            <div class="field">
+              <label for="inputTokens">Monthly Input Tokens</label>
+              <input type="text" id="inputTokens" inputmode="numeric" placeholder="e.g. 7,000,000" />
+            </div>
+
+            <div class="field">
+              <label for="outputTokens">Monthly Output Tokens</label>
+              <input type="text" id="outputTokens" inputmode="numeric" placeholder="e.g. 3,000,000" />
+            </div>
+          </div>
+
+          <div class="preset-row">
+            <button id="preset7030" type="button" class="btn-secondary">Preset: 10M (7M in, 3M out)</button>
+            <button id="preset5050" type="button" class="btn-secondary">Preset: 10M (5M in, 5M out)</button>
+          </div>
+
+          <div class="section-title">AIsa and output</div>
+
+          <div class="aisa-row">
+            <div class="aisa-toggle">
+              <input id="showAisa" type="checkbox" checked />
+              <label for="showAisa">Show AIsa estimate (illustrative)</label>
+            </div>
+
+            <div class="field">
+              <label for="aisaDiscount">AIsa discount %</label>
+              <input id="aisaDiscount" type="number" min="0" max="100" value="20" />
+              <small class="hint">Example only, verify exact AIsa pricing per model.</small>
+            </div>
+          </div>
+
+          <div class="mode-row">
+            <div class="mode-toggle">
+              <input id="annualMode" type="checkbox" />
+              <label for="annualMode">Show annual projection</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <button id="calculateBtn" type="button">Calculate Cost</button>
+          </div>
+
+          <div class="copy-actions">
+            <button id="copyBtn" type="button" class="btn-secondary">Copy Result</button>
+
+            <div class="copy-row">
+              <button id="copyMarkdownBtn" type="button" class="btn-ghost">Copy Markdown</button>
+              <button id="copyCsvBtn" type="button" class="btn-ghost">Copy CSV</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Results -->
+        <div class="right">
+          <div class="results-header">
+            <div>
+              <div class="results-title">Results</div>
+              <div class="results-subtitle">Click Calculate to update results.</div>
+            </div>
+          </div>
+
+          <div id="results" class="results"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="site-footer">
+       <div class="footer-inner">
+       <div class="footer-left">
+         Pricing based on official API list prices. Estimates only.
+      </div>
+
+    <div class="footer-right">
+       Built with 
+        <a href="https://aisa.one" target="_blank" rel="noopener noreferrer">
+          AIsa Infrastructure
+        </a>
+       </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

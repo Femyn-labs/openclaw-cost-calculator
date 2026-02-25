@@ -1,0 +1,78 @@
+Provider	Model	Tier/Variant	Input $/1M	Cached input $/1M	Output $/1M	Notes	Source	Status
+OpenAI	gpt-5.2-pro	Flex	$10.50	N/A	$84.00	Flex tier. Cached input not listed for pro models.	https://developers.openai.com/api/docs/pricing/	verified
+OpenAI	gpt-5	Flex	$0.625	$0.0625	$5.00	Flex tier.	https://developers.openai.com/api/docs/pricing/	verified
+OpenAI	gpt-5-mini	Flex	$0.125	$0.0125	$1.00	Flex tier.	https://developers.openai.com/api/docs/pricing/	verified
+OpenAI	gpt-5-nano	Flex	$0.025	$0.0025	$0.20	Flex tier.	https://developers.openai.com/api/docs/pricing/	verified
+OpenAI	o1-pro	Flex	$75.00	N/A	$300.00	Flex tier. Cached input not listed.	https://developers.openai.com/api/docs/pricing/	verified
+OpenAI	o1	Flex	$7.50	N/A	$30.00	Flex tier. Cached input not listed.	https://developers.openai.com/api/docs/pricing/	verified
+OpenAI	o3-pro	Flex	$10.00	N/A	$40.00	Flex tier. Cached input not listed.	https://developers.openai.com/api/docs/pricing/	verified
+OpenAI	o3	Flex	$1.00	$0.25	$4.00	Flex tier.	https://developers.openai.com/api/docs/pricing/	verified
+OpenAI	o4-mini	Flex	$0.55	$0.138	$2.20	Flex tier.	https://developers.openai.com/api/docs/pricing/	verified
+OpenAI	o3-deep-research	Flex	$5.00	N/A	$20.00	Flex tier. Cached input not listed.	https://developers.openai.com/api/docs/pricing/	verified
+OpenAI	gpt-4.1 (Fine-tuning)	Fine-tuning	$3.00	$0.75	$12.00	Fine-tuning usage pricing, not training.	https://openai.com/api/pricing/	verified
+OpenAI	gpt-4.1 mini (Fine-tuning)	Fine-tuning	$0.80	$0.20	$3.20	Fine-tuning usage pricing, not training.	https://openai.com/api/pricing/	verified
+Anthropic	Claude Opus 4.6	API	$5.00	5m write $6.25; 1h write $10.00	$25.00	Cache read pricing not captured in this sheet, verify on Anthropic docs.	https://docs.anthropic.com/en/docs/about-claude/pricing	manual verify
+Anthropic	Claude Opus 4.5	API	$5.00	5m write $6.25; 1h write $10.00	$25.00	Cache read pricing not captured in this sheet, verify on Anthropic docs.	https://docs.anthropic.com/en/docs/about-claude/pricing	manual verify
+Anthropic	Claude Opus 4.1	API	$15.00	5m write $18.75; 1h write $30.00	$75.00	Cache read pricing not captured in this sheet, verify on Anthropic docs.	https://docs.anthropic.com/en/docs/about-claude/pricing	manual verify
+Anthropic	Claude Sonnet 4.6	API	$3.00	5m write $3.75; 1h write $6.00	$15.00	Cache read pricing not captured in this sheet, verify on Anthropic docs.	https://docs.anthropic.com/en/docs/about-claude/pricing	manual verify
+Anthropic	Claude Sonnet 4.5	API	$3.00	5m write N/A; 1h write N/A	$15.00	Cache read pricing not captured in this sheet, verify on Anthropic docs.	https://docs.anthropic.com/en/docs/about-claude/pricing	manual verify
+Anthropic	Claude Sonnet 4.1	API	$3.00	5m write $3.75; 1h write $6.00	$15.00	Cache read pricing not captured in this sheet, verify on Anthropic docs.	https://docs.anthropic.com/en/docs/about-claude/pricing	manual verify
+Anthropic	Claude Haiku 3.5	API	$0.80	5m write $1.00; 1h write $1.60	$4.00	Cache read pricing not captured in this sheet, verify on Anthropic docs.	https://docs.anthropic.com/en/docs/about-claude/pricing	manual verify
+Anthropic	Claude Haiku 3.0	API	$0.25	5m write $0.30; 1h write $0.50	$1.25	Cache read pricing not captured in this sheet, verify on Anthropic docs.	https://docs.anthropic.com/en/docs/about-claude/pricing	manual verify
+Google	gemini-3.1-pro-preview	Standard (<=200k)	$2.00	$0.20	$12.00	Gemini Developer API pricing, prompts <=200k tokens.	https://ai.google.dev/gemini-api/docs/pricing	verified
+Google	gemini-3.1-pro-preview	Standard (>200k)	$4.00	$0.40	$18.00	Gemini Developer API pricing, prompts >200k tokens.	https://ai.google.dev/gemini-api/docs/pricing	verified
+Google	gemini-3-pro-preview	Standard (<=200k)	$2.00	$0.20	$12.00	Gemini Developer API pricing, prompts <=200k tokens.	https://ai.google.dev/gemini-api/docs/pricing	verified
+Google	gemini-3-pro-preview	Standard (>200k)	$4.00	$0.40	$18.00	Gemini Developer API pricing, prompts >200k tokens.	https://ai.google.dev/gemini-api/docs/pricing	verified
+Google	gemini-2.5-pro	Standard (<=200k)	$1.25	$0.125	$10.00	Gemini Developer API pricing, prompts <=200k tokens.	https://ai.google.dev/gemini-api/docs/pricing	verified
+Google	gemini-2.5-pro	Standard (>200k)	$2.50	$0.25	$15.00	Gemini Developer API pricing, prompts >200k tokens.	https://ai.google.dev/gemini-api/docs/pricing	verified
+Google	gemini-2.5-flash	Standard (text/image/video input)	$0.30	$0.03	$2.50	Gemini Developer API pricing.	https://ai.google.dev/gemini-api/docs/pricing	verified
+Google	gemini-2.5-flash	Standard (audio input)	$1.00	$0.10	$2.50	Audio input has different input and cache pricing.	https://ai.google.dev/gemini-api/docs/pricing	verified
+Google	gemini-2.5-flash-lite	Standard (text/image/video input)	$0.10	$0.01	$0.40	Gemini Developer API pricing.	https://ai.google.dev/gemini-api/docs/pricing	verified
+Google	gemini-2.5-flash-lite	Standard (audio input)	$0.30	$0.03	$0.40	Audio input has different input and cache pricing.	https://ai.google.dev/gemini-api/docs/pricing	verified
+Alibaba Cloud	qwen3-max-2025-09-23 (International)	0<Token<=32K	$1.20	N/A	$6.00	Tiered pricing, international deployment mode.	https://www.alibabacloud.com/help/en/model-studio/models	verified
+Alibaba Cloud	qwen3-max-2025-09-23 (International)	32K<Token<=128K	$2.40	N/A	$12.00	Tiered pricing, international deployment mode.	https://www.alibabacloud.com/help/en/model-studio/models	verified
+Alibaba Cloud	qwen3-max-2025-09-23 (International)	128K<Token<=252K	$3.00	N/A	$15.00	Tiered pricing, international deployment mode.	https://www.alibabacloud.com/help/en/model-studio/models	verified
+Alibaba Cloud	qwen-max-2024-09-19	Stable	$0.345	N/A	$1.377	Pricing listed under Global deployment mode.	https://www.alibabacloud.com/help/en/model-studio/models	verified
+Alibaba Cloud	qwen-plus-2025-12-01 (International)	Stable	$0.40	N/A	$1.20	Non-thinking mode pricing shown for qwen-plus snapshot.	https://www.alibabacloud.com/help/en/model-studio/models	verified
+Alibaba Cloud	qwen-plus-2025-12-01 (International)	Thinking mode	$0.40	N/A	$4.00	Thinking mode output pricing shown for qwen-plus snapshot.	https://www.alibabacloud.com/help/en/model-studio/models	verified
+Moonshot AI	Kimi K2.5	API	$0.60	$0.10	$3.00	Verify on Moonshot pricing console.	https://platform.moonshot.ai	manual verify
+Moonshot AI	Kimi K2.5-latest	API	$0.60	$0.10	$3.00	Verify on Moonshot pricing console.	https://platform.moonshot.ai	manual verify
+Moonshot AI	Kimi K2.0	API	$1.00	$0.20	$3.00	Verify on Moonshot pricing console.	https://platform.moonshot.ai	manual verify
+Moonshot AI	Kimi K1.5	API	$3.00	$0.30	$15.00	Verify on Moonshot pricing console.	https://platform.moonshot.ai	manual verify
+Groq	moonshotai/kimi-k2-instruct	On-Demand	$1.00	$0.50	$3.00	Prompt caching discount applies only on cache hits.	https://groq.com/pricing	verified
+Groq	openai/gpt-oss-120b	On-Demand	$0.15	$0.075	$0.60	Prompt caching discount applies only on cache hits.	https://groq.com/pricing	verified
+Groq	openai/gpt-oss-20b	On-Demand	$0.075	$0.0375	$0.30	Prompt caching discount applies only on cache hits.	https://groq.com/pricing	verified
+Mistral	Mistral Large 3 (2512)	API	$0.50	N/A	$1.50	Manual verify on official pricing page.	https://docs.mistral.ai/pricing	manual verify
+Mistral	Ministral 3B (2410)	API	$0.04	N/A	$0.04	Manual verify on official pricing page.	https://docs.mistral.ai/pricing	manual verify
+Mistral	Ministral 8B (2410)	API	$0.10	N/A	$0.10	Manual verify on official pricing page.	https://docs.mistral.ai/pricing	manual verify
+Mistral	Pixtral Large (2502)	API	$2.00	N/A	$6.00	Manual verify. Pixtral pricing not visibly shown on the official page, verify directly.	https://docs.mistral.ai/pricing	manual verify
+Z.AI	GLM-5	API	$1.00	$0.20	$3.20	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-5-Code	API	$1.20	$0.30	$5.00	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-4.7	API	$0.60	$0.11	$2.20	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-4.7-FlashX	API	$0.07	$0.01	$0.40	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-4.6	API	$0.60	$0.11	$2.20	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-4.5	API	$0.60	$0.11	$2.20	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-4.5-X	API	$2.20	$0.45	$8.90	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-4.5-Air	API	$0.20	$0.03	$1.10	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-4.5-AirX	API	$1.10	$0.22	$4.50	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-4-32B-0414-128K	API	$0.10	N/A	$0.10	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-4.6V (Vision)	API	$0.30	$0.05	$0.90	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-4.6V-FlashX (Vision)	API	$0.04	$0.004	$0.40	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Z.AI	GLM-4.5V (Vision)	API	$0.60	$0.11	$1.80	Prices per 1M tokens.	https://docs.z.ai/guides/overview/pricing	verified
+Cerebras	Llama 3.1 8B	API	$0.10	N/A	$0.10	Manual verify on Cerebras pricing.	https://cerebras.ai/pricing	manual verify
+Cerebras	Llama 3.1 70B	API	$0.60	N/A	$0.60	Manual verify on Cerebras pricing.	https://cerebras.ai/pricing	manual verify
+Cerebras	Llama 3.1 405B	API	$5.00	N/A	$5.00	Manual verify on Cerebras pricing.	https://cerebras.ai/pricing	manual verify
+Cerebras	Qwen 3 235B	API	$4.00	N/A	$4.00	Manual verify on Cerebras pricing.	https://cerebras.ai/pricing	manual verify
+Cerebras	GPT-OSS 120B	API	$0.15	N/A	$0.15	Manual verify on Cerebras pricing.	https://cerebras.ai/pricing	manual verify
+Xiaomi (MiMo)	MiMo-V2-Flash	Overseas	$0.10	$0.01	$0.30	From Xiaomi MiMo API Open Platform pricing.	https://platform.xiaomimimo.com/	verified
+Xiaomi (MiMo)	MiMo-V2-Flash	China	¥0.70	¥0.07	¥2.10	From Xiaomi MiMo API Open Platform pricing.	https://platform.xiaomimimo.com/	verified
+Hugging Face	AWS NVIDIA L4	Inference Endpoints	N/A	N/A	$0.80		https://huggingface.co/docs/inference-endpoints/en/pricing	verified
+Hugging Face	AWS NVIDIA L40S	Inference Endpoints	N/A	N/A	$1.80		https://huggingface.co/docs/inference-endpoints/en/pricing	verified
+Hugging Face	AWS NVIDIA A100	Inference Endpoints	N/A	N/A	$3.70		https://huggingface.co/docs/inference-endpoints/en/pricing	verified
+Hugging Face	AWS NVIDIA H100	Inference Endpoints	N/A	N/A	N/A	AWS H100 not listed on HF Inference Endpoints pricing page, remove or verify manually.	https://huggingface.co/docs/inference-endpoints/en/pricing	manual verify
+Hugging Face	AWS NVIDIA H200	Inference Endpoints	N/A	N/A	$5.00		https://huggingface.co/docs/inference-endpoints/en/pricing	verified
+Hugging Face	GCP NVIDIA A100	Inference Endpoints	N/A	N/A	$4.20		https://huggingface.co/docs/inference-endpoints/en/pricing	verified
+Hugging Face	GCP NVIDIA H100	Inference Endpoints	N/A	N/A	$10.00		https://huggingface.co/docs/inference-endpoints/en/pricing	verified
+Hugging Face	GCP NVIDIA L4	Inference Endpoints	N/A	N/A	$0.70		https://huggingface.co/docs/inference-endpoints/en/pricing	verified
+Hugging Face	GCP NVIDIA B200	Inference Endpoints	N/A	N/A	N/A	B200 not listed on HF Inference Endpoints pricing page, verify manually.	https://huggingface.co/docs/inference-endpoints/en/pricing	manual verify
+Hugging Face	GCP NVIDIA B200 (x8)	Inference Endpoints	N/A	N/A	N/A	B200 not listed on HF Inference Endpoints pricing page, verify manually.	https://huggingface.co/docs/inference-endpoints/en/pricing	manual verify
